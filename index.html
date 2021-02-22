@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body class="bg-light py-5">
+
+<section id="setting">
+    <div class="bg-white text-orange  overflow-auto w-50 m-auto shadow-lg rounded-lg">
+        <h1 class="text-center py-5 text-orange bg-light border-bottom ">Setting Your Quiz</h1>
+        <div class="px-4 py-3">
+            <label for="category" class="text-orange" >Category</label>
+            <select name="category" id="category" class="form-control">
+                <option value="9">General knowledge</option>
+                <option value="27">Animals</option>
+                <option value="15">Vedio Games</option>
+                <option value="23">History</option>
+                <option value="21">Sports</option>
+                <option value="18">Science:Computers</option>
+            </select>
+        </div>
+    <div class="form-group px-4">
+        <label for="difficulty" class="text-orange"> Difficulty</label>
+        <div class="form-check" id="difficulty">
+            <label for="form-check-label">
+                <input type="radio" class="form-check-input" name="difficulty" id="easy" value="easy" checked >Easy
+             </label>
+        </div>
+        <div class="form-check" >
+            <label for="form-check-label">
+                <input type="radio" class="form-check-input" name="difficulty" id="medium" value="medium" >Medium
+             </label>
+        </div>
+        <div class="form-check" >
+            <label for="form-check-label">
+                <input type="radio" class="form-check-input" name="difficulty" id="hard" value="hard" >Hard
+             </label>
+        </div>
+    </div>
+    <div class="form-group px-4 py-2">
+        <input type="number" class="form-control" name="" id="Number" aria-describedby="helpId" placeholder="Number Of questions" required>
+    </div>
+    <button id="startBtn" class="btn float-right py-2 px-4 m-2 bg-orange  rounded-pill text-white ">Start</button>
+</div>
+</section>
+
+<section id="quiz" >
+    <div class="bg-white w-50 m-auto shadow-lg rounded-lg  overflow-auto">
+        <div class="p-3 bg-light border-bottom overflow-auto">
+            <h1 class="text-orange text-center">Quiz</h1>
+            <span class="float-right bg-orange  rounded-pill text-white p-2 ">
+                <span id="current"></span> Of 
+                <span id="totalAmount">
+                </span> Question</span>
+            <span id="inCorrect" class="btn btn-danger float-left">InCorrect</span>
+            <span id="Correct" class="btn btn-success float-left">Correct</span>
+            <div class="clearFix"></div>
+        </div>
+        <div class="p-4 text-orange ">
+            <h5 class="d-inline">Q:</h5>
+            <h5 id="question" class="d-inline"></h5>
+
+            <div id="rowAnswer">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="answer" id="q" value="d">
+                        aa
+                    </label>
+                </div>
+               
+            </div>
+            <div class="alert alert-danger mt-3">Please Choose Your Answer</div>
+            <button class="btn float-right py-2 px-4 bg-orange  rounded-pill text-white my-4" id="next">Submit</button>
+        </div>
+    </div>
+</section>
+
+<section id="finish" >
+    <div class="bg-white w-50 m-auto shadow-lg rounded overflow-auto text-center">
+        <h1 class=" text-orange py-5 bg-light border-bottom">fininsh</h1>
+        <div class="p-4">
+        <h5 class=" text-orange">score</h5>
+        <h4 class=" text-orange" id="score"></h4>
+        <button class="btn float-right py-2 px-4 bg-orange  rounded-pill text-white my-4" id="tryBtn">Try Again?</button>
+    </div>
+    </div>
+</section>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="module"></script>    
+
+</body>
+</html>
