@@ -70,7 +70,8 @@ export class quiz {
         for (let i = 0; i < answersArray.length; i++) {
             temp += `<div class="form-check">
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="answer" id="q${i}" value="${answersArray[i]}">
+                <input type="radio" class="form-check-input" name="answer" id="q${i}" 
+                value="${answersArray[i]}">
                 ${answersArray[i]}
             </label>
         </div>`
